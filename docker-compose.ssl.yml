@@ -27,7 +27,7 @@ services:
       - app
     command: certonly --webroot --force-renewal --webroot-path=/var/www/html -d webit.store -d *.webit.store --email tv.lidor@gmail.com --agree-tos --no-eff-email --allow-subset-of-names
   api:
-    image: lidoravitan/webit-server
+    image: lidoravitan/webit-backend
     environment:
       NODE_ENV: "production"
   app:
