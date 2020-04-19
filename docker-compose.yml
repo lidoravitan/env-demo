@@ -9,7 +9,7 @@ services:
       - 443:443
     volumes:
       - ./prod:/etc/nginx/conf.d
-      - ./letsencrypt:/etc/letsencrypt
+      - ./letsencrypt/live:/etc/letsencrypt
     depends_on:
       - api
       - app
