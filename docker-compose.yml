@@ -26,11 +26,11 @@ services:
       - api
       - app
   api:
-    image: lidoravitan/toucheat-server
+    image: lidoravitan/webit-backend
     environment:
       NODE_ENV: "production"
   app:
-    image: lidoravitan/toucheat-admin-fed
+    image: lidoravitan/webit-frontend
   db:
     image: mongo:latest
     ports:
