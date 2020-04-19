@@ -25,7 +25,7 @@ services:
     depends_on:
       - api
       - app
-    command: certonly --dry-run --manual --preferred-challenges=dns --force-renewal  --email tv.lidor@gmail.com --agree-tos --no-eff-email -d *.webit.store
+    command: certonly --dry-run --manual --preferred-challenges=dns --force-renewal --email tv.lidor@gmail.com --agree-tos --no-eff-email -d *.webit.store
   api:
     image: lidoravitan/webit-backend
     environment:
