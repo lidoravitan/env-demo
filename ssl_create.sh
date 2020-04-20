@@ -1,1 +1,2 @@
-docker run -it -v /home/ec2-user/env-demo/letsencrypt:/etc/letsencrypt certbot/certbot certonly --manual --preferred-challenges=dns --force-renewal  --email tv.lidor@gmail.com --agree-tos --no-eff-email -d *.webit.store -d webit.store
+path=$(pwd)
+docker run -it -v ${path}/letsencrypt:/etc/letsencrypt certbot/certbot certonly --manual --preferred-challenges=dns --force-renewal  --email tv.lidor@gmail.com --agree-tos --no-eff-email -d *.webit.store -d webit.store
