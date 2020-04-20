@@ -48,7 +48,7 @@ services:
     volumes:
       - db:/var/lib/mysql:delegated
 
-  volumes:
-    wordpress:
-    db:
+volumes:
+  wordpress:
+  db:
   
