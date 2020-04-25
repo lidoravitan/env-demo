@@ -20,7 +20,7 @@ services:
   app:
     image: lidoravitan/webit-frontend
   admin:
-      image: lidoravitan/webit-frontend
+      image: lidoravitan/webit-admin
   db:
     image: mongo:latest
     ports:
