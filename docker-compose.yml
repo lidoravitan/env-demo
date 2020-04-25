@@ -19,6 +19,8 @@ services:
       NODE_ENV: "production"
   app:
     image: lidoravitan/webit-frontend
+  admin:
+      image: lidoravitan/webit-frontend
   db:
     image: mongo:latest
     ports:
