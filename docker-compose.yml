@@ -18,7 +18,7 @@ services:
     environment:
       NODE_ENV: "production"
   app:
-    image: lidoravitan/webit-frontend-ssr
+    image: lidoravitan/webit-frontend
   admin:
       image: lidoravitan/webit-admin
   db:
