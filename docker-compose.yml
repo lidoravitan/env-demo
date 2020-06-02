@@ -21,6 +21,16 @@ services:
     image: lidoravitan/webit-frontend-ssr
   admin:
       image: lidoravitan/webit-admin
+  
+  test-js:
+    image: webit-test-empty-javascript
+  test-ts:
+    image: webit-test-empty-typescript
+  test-api-js:
+    image: webit-test-api-typescript
+  test-api-ts:
+    image: webit-test-api-javascript
+
   db:
     image: mongo:latest
     ports:
