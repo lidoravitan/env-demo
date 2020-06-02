@@ -26,9 +26,9 @@ services:
     image: lidoravitan/webit-test-empty-javascript
   test-ts:
     image: lidoravitan/webit-test-empty-typescript
-  test-api-js:
-    image: lidoravitan/webit-test-api-typescript
   test-api-ts:
+    image: lidoravitan/webit-test-api-typescript
+  test-api-js:
     image: lidoravitan/webit-test-api-javascript
 
   db:
