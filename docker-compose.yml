@@ -17,19 +17,11 @@ services:
     image: lidoravitan/webit-backend
     environment:
       NODE_ENV: "production"
+
   app:
-    image: lidoravitan/webit-frontend-ssr
+    image: lidoravitan/webit-frontend
   admin:
       image: lidoravitan/webit-admin
-  
-  test-js:
-    image: lidoravitan/webit-test-empty-javascript
-  test-ts:
-    image: lidoravitan/webit-test-empty-typescript
-  test-api-ts:
-    image: lidoravitan/webit-test-api-typescript
-  test-api-js:
-    image: lidoravitan/webit-test-api-javascript
 
   db:
     image: mongo:latest
