@@ -1,15 +1,11 @@
 version: "3"
 services:
   nginx:
-    image: nginx:latest
-    container_name: nginx
+    build: .
     restart: unless-stopped
     ports:
       - 80:80
       - 443:443
-    volumes:
-      - ./prod:/etc/nginx/conf.d
-      - ./letsencrypt:/etc/letsencrypt
     depends_on:
       - api
       - app
@@ -17,7 +13,6 @@ services:
     image: lidoravitan/webit-backend
     environment:
       NODE_ENV: "production"
-
   app:
     image: lidoravitan/webit-frontend
   admin:
